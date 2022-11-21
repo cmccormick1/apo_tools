@@ -130,15 +130,15 @@ class AspcapStarDR17(AspcapStar):
     def get_version(self, library):
         self.obs = Spectrum(*self.get_spectrum(BASE_DIRECTORY_DR17, 'dr17',
                                                library, 1, 
-                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\LMC\\Spectra\\Supergiants\\', 
+                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\SMC\\Spectra\\Supergiants\\', 
                                                save_file=True))
         self.fit = Spectrum(*self.get_spectrum(BASE_DIRECTORY_DR17, 'dr17',
                                                library, 3, 
-                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\LMC\\Spectra\\Supergiants\\', 
+                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\SMC\\Spectra\\Supergiants\\', 
                                                save_file=True))
         self.err = Spectrum(*self.get_spectrum(BASE_DIRECTORY_DR17, 'dr17',
                                                library, 2,
-                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\LMC\\Spectra\\Supergiants\\', 
+                                               path='C:\\Users\\carol\\Documents\\UVA\\Research\\LMC_SMC_Giants\\Data\\SMC\\Spectra\\Supergiants\\', 
                                                save_file=True))
         self.info_table = self.get_summarytable(BASE_DIRECTORY_DR17, 'dr17',
                                                 library, 4,
